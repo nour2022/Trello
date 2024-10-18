@@ -1,0 +1,169 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F9F9F9; /* Light gray background */
+}
+
+.body1 {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://buffer.com/resources/content/images/wp-content/uploads/2018/06/jason-leung-479251-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+/* Card Container */
+.container {
+  background-color: #b4e2f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  height: 1050px;
+  margin-right: 20px; /* Spacing */
+}
+
+/* Card Styles */
+.card {
+  margin-top: 100px;
+  background-color: #f7e499; /* Yellow background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  text-align: center;
+  min-height: 1000px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FF6B6B; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #73D2DE;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #4A90E2; /* Primary color on focus */
+  outline: none;
+}
+
+/* Button Styles */
+.add-task-button,
+.edit-task-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #FF6B6B; /* Red button */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover,
+.edit-task-button:hover {
+  background-color: #E94E4E;
+}
+
+.add-task-button:disabled,
+.edit-task-button:disabled {
+  background-color: #bbb;
+}
+
+.example-container {
+  background-color: #F4F6F8; /* Soft white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.head-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #F26A8D;
+  margin-bottom: 15px;
+}
+
+.example-list {
+  background-color: #ffffff;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 200px;
+}
+
+.example-box {
+  padding: 10px;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #73d2de;
+  transition: background-color 0.3s ease;
+}
+
+.example-box:hover {
+  background-color: #ffbc42;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.delete-btn .icon {
+  color: #FF6B6B;
+}
+
+.edit-btn .icon {
+  color: #FFD93D;
+}
+
+.complete-btn .icon {
+  color: #4CAF50; /* Green check */
+}
+
+.complete-btn .icon:hover {
+  color: #3A8F40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container,
+  .example-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
